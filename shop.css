@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    letter-spacing: .5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    outline: none;
+}
+body{
+    background-color: rgb(245, 245, 245) !important;
+}
+header{
+    width: 100%;
+    padding: 15px 0px;
+    margin-bottom: 30px;
+    background-color: rgb(237, 224, 250);
+}
+.container-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.span-header{
+    color: blueviolet;
+    cursor: pointer;
+}    
+.shopping-header-div{
+    cursor: pointer;
+    position: relative;
+    z-index: 1;    
+}
+
+.shopping-header-number{
+    background-color: crimson;
+    color: white;
+    font-size: 11px;
+    padding: 0px 6px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 13px;
+    left: 17px;
+}    
+.icon-header{
+    font-size: 1.31rem;
+}
+main{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+    
+}
+.container-main{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 6vw;
+}    
+.productour{
+    font-size: 2.2rem;
+    letter-spacing: 1.1px;
+    margin-bottom: 70px;
+}
+.container-product{
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    
+    text-align: center;
+    gap: 50px 30px;
+}
+
+.product{
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+    
+}
+    
+    
+.info-product-box{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px 20px 0px;
+}
+.prices-of-product{
+    color: rgb(143, 28, 219);
+    font-size: .95rem;
+}    
+.img-product{
+    width:100%;
+}
+.btn-type{
+    margin-bottom: 25px;
+}
+.btn-product-box{
+    color: rgb(143, 28, 219);
+    font-weight: 600;
+    padding: 5px 8px;
+    font-size: .95rem;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(237, 224, 250);
+    
+
+}
+
+@media screen and (max-width:800px){
+    .container-product{
+        grid-template-columns: 1fr 1fr;
+    }   
+}
+@media screen and (max-width:600px){
+    .container-product{
+        grid-template-columns: 1fr;
+    }
+    .container-main{
+        margin: 0px;
+    }
+}
+/*buy-box*/
+.buy-box{
+    width: 460px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 16px 30px 16px 30px;
+    position: absolute;
+    top: 55px;
+    right: 33.5%;
+    visibility: hidden;
+    z-index: 1;
+}
+.buy-box-container{
+    width: 100%;
+}
+.title-cart-container{
+    font-size: 1.12rem;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.carts-all{
+    width: 100%;
+}
+.carty{
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-container-buy-cart{
+    width: 110px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.image-buy-cart{
+    width: 100%;
+}
+
+.p-buy-cart{
+    margin-bottom: 4px;
+}    
+.span-buy-cart{
+    color: rgba(0, 0, 0, .55);
+    font-size: .8rem;
+}    
+.number-buy-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.span-increase{
+    color: blueviolet;
+    cursor: pointer;
+}
+.span-decrease{
+    color: rgb(226, 43, 98);
+    cursor: pointer;
+}
+.div-trash-buy-cart{
+    cursor: pointer;
+}
+    
+.span-icon-buy-cart{
+    font-size: .8rem;
+}
+.edit-buy-cart{
+    width: 100%;
+    margin: 40px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+}
+.p-editor-buy-cart{
+    font-size: .8rem;
+}
+.span-editor-buy-cart{
+    font-size: .8rem;
+    
+}
+.editor-div{
+    font-size: .8rem;
+    padding: 4px 6px;
+
+    color:blueviolet;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.clear-cart{
+    border: 1px solid rgba(138, 43, 226,.8);
+    margin-left: 12px;
+}
+.fa-trash{
+    cursor: pointer;
+}
+.confirm{
+    margin-left: 12px;
+    background-color: rgb(237, 224, 250);
+}
+.darkpage{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    visibility: hidden;
+    height:1500px;
+    background-color: rgba(0, 0, 0, .3);
+    
+}
+
+
+/*///////*/    
+@media screen and (max-width:800px){
+    .buy-box{
+        right: 5%;
+    }
+}
+@media screen and (max-width:500px){
+    .buy-box{
+        right: 0%;
+        width: 100%;
+        padding: 16px 15px;
+    }
+    
+    
+}
+        
+/*/////////////////////////////////////////*/
